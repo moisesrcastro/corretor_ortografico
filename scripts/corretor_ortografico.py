@@ -125,7 +125,7 @@ class CorretorOrtografico():
   
 if __name__ == "__main__":
 
-    with open(r'/content/drive/MyDrive/Foco na Vaga/artigos.txt', 'r', encoding='utf-8') as file:
+    with open(r'artigos.txt', 'r', encoding='utf-8') as file:
         artigos = file.read()
 
     tokens = list()
@@ -140,7 +140,7 @@ if __name__ == "__main__":
     frequencia = nltk.FreqDist(tokens)
     vocabulario = set(tokens)
 
-    with open(r'/content/drive/MyDrive/Foco na Vaga/palavras.txt', 'r', encoding='utf-8') as file:
+    with open(r'/palavras.txt', 'r', encoding='utf-8') as file:
         palavras = file.readlines()
   
     for i in range(len(palavras)):
